@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7395E18714C7C31F00AC1796 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7395E18614C7C31F00AC1796 /* Growl.framework */; };
+		7395E19014C7C4F500AC1796 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7395E18614C7C31F00AC1796 /* Growl.framework */; };
+		73C1A38614D3A50400015FAB /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C1A38514D3A50400015FAB /* Destination.m */; };
+		73C1A38D14D3ACBB00015FAB /* AppleScriptSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C1A38C14D3ACBB00015FAB /* AppleScriptSupport.m */; };
+		DA0BDA0F14CCE3D000205D80 /* KeychainServices.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0BDA0E14CCE3D000205D80 /* KeychainServices.m */; };
+		DA0BDA1214CD096D00205D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0BDA1114CD096D00205D80 /* AppDelegate.m */; };
+		DA16361914FB131000A38906 /* NSString+Bonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16361814FB131000A38906 /* NSString+Bonjour.m */; };
+		DA16361C14FB25CB00A38906 /* NSArray+Bonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16361B14FB25CB00A38906 /* NSArray+Bonjour.m */; };
+		DA16361F14FB2C6300A38906 /* NSDictionary+Bonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16361E14FB2C6300A38906 /* NSDictionary+Bonjour.m */; };
+		DA20C98714C52C4500DF9043 /* Tedium.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DA20C98614C52C4500DF9043 /* Tedium.sdef */; };
+		DA2CD9F614D46FCD001632F3 /* QuincyKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA2CD9F414D46FCD001632F3 /* QuincyKit-Info.plist */; };
+		DA2CDA0414D47316001632F3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2CDA0314D47316001632F3 /* Sparkle.framework */; };
+		DA2CDA0514D478FE001632F3 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DA2CDA0314D47316001632F3 /* Sparkle.framework */; };
+		DA2CDA0714D479D9001632F3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = DA2CDA0614D479D9001632F3 /* dsa_pub.pem */; };
+		DA2CDA0914D4BEF4001632F3 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2CDA0814D4BEF4001632F3 /* gear.png */; };
+		DA81451214C9C49100776C35 /* PopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81451114C9C49100776C35 /* PopButton.m */; };
+		DA81451314C9DAA000776C35 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B014C4F6C10041A7F3 /* BetterAuthorizationSampleLib.c */; };
+		DA81451414C9DB5B00776C35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99CD14C4F7AA0041A7F3 /* Security.framework */; };
+		DA81451514C9DB5E00776C35 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99C014C4F76E0041A7F3 /* CoreFoundation.framework */; };
+		DA81451A14C9E8D800776C35 /* AppDelegate+HelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81451914C9E8D800776C35 /* AppDelegate+HelperTool.m */; };
+		DA81451C14CA037300776C35 /* TediumHelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = DADA99BE14C4F76E0041A7F3 /* TediumHelperTool */; };
+		DA81451D14CA037300776C35 /* TediumHelperInstallTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = DADA99D514C4F7E90041A7F3 /* TediumHelperInstallTool */; };
+		DAA4E60F14E4B9D1007D3D8F /* NetworkBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4E60E14E4B9D1007D3D8F /* NetworkBrowser.m */; };
+		DAAFA2121524AC38000442A3 /* BWQuincyMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = DAAFA20F1524AC38000442A3 /* BWQuincyMain.nib */; };
+		DAAFA2131524AC38000442A3 /* BWQuincyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFA2111524AC38000442A3 /* BWQuincyManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DABD281714C8D0E000455E23 /* minus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = DABD281514C8D0E000455E23 /* minus-8.png */; };
+		DABD281814C8D0E000455E23 /* plus-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DABD281614C8D0E000455E23 /* plus-arrow.png */; };
+		DABD281B14C92B8B00455E23 /* awesomeclock.icns in Resources */ = {isa = PBXBuildFile; fileRef = DABD281A14C92B8B00455E23 /* awesomeclock.icns */; };
+		DADA99B914C4F6C10041A7F3 /* TediumHelperToolCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B414C4F6C10041A7F3 /* TediumHelperToolCommon.c */; };
+		DADA99C114C4F76E0041A7F3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99C014C4F76E0041A7F3 /* CoreFoundation.framework */; };
+		DADA99CA14C4F79B0041A7F3 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B014C4F6C10041A7F3 /* BetterAuthorizationSampleLib.c */; };
+		DADA99CB14C4F79B0041A7F3 /* TediumHelperTool.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B314C4F6C10041A7F3 /* TediumHelperTool.c */; };
+		DADA99CC14C4F79B0041A7F3 /* TediumHelperToolCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B414C4F6C10041A7F3 /* TediumHelperToolCommon.c */; };
+		DADA99CE14C4F7AA0041A7F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99CD14C4F7AA0041A7F3 /* Security.framework */; };
+		DADA99D014C4F7C20041A7F3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99CF14C4F7C20041A7F3 /* CoreServices.framework */; };
+		DADA99D714C4F7E90041A7F3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA99C014C4F76E0041A7F3 /* CoreFoundation.framework */; };
+		DADA99E014C4F7F70041A7F3 /* BetterAuthorizationSampleLibInstallTool.c in Sources */ = {isa = PBXBuildFile; fileRef = DADA99B214C4F6C10041A7F3 /* BetterAuthorizationSampleLibInstallTool.c */; };
+		DAEBC0A114C4C2280018FA96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEBC0A014C4C2280018FA96 /* Cocoa.framework */; };
+		DAEBC0AB14C4C2280018FA96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAEBC0A914C4C2280018FA96 /* InfoPlist.strings */; };
+		DAEBC0AD14C4C2280018FA96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEBC0AC14C4C2280018FA96 /* main.m */; };
+		DAEBC0B114C4C2280018FA96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAEBC0AF14C4C2280018FA96 /* Credits.rtf */; };
+		DAEBC0B714C4C2280018FA96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAEBC0B514C4C2280018FA96 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DADA99E114C4FAD20041A7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAEBC09314C4C2270018FA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADA99BD14C4F76E0041A7F3;
+			remoteInfo = HelperTool;
+		};
+		DADA99E314C4FAD60041A7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAEBC09314C4C2270018FA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADA99D414C4F7E90041A7F3;
+			remoteInfo = HelperInstallTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7395E18F14C7C4DA00AC1796 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7395E19014C7C4F500AC1796 /* Growl.framework in Copy Frameworks */,
+				DA2CDA0514D478FE001632F3 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA81451B14CA036A00776C35 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				DA81451C14CA037300776C35 /* TediumHelperTool in CopyFiles */,
+				DA81451D14CA037300776C35 /* TediumHelperInstallTool in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADA99BC14C4F76E0041A7F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DADA99D314C4F7E90041A7F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7395E18614C7C31F00AC1796 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		73C1A38414D3A50400015FAB /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
+		73C1A38514D3A50400015FAB /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
+		73C1A38B14D3ACBB00015FAB /* AppleScriptSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleScriptSupport.h; sourceTree = "<group>"; };
+		73C1A38C14D3ACBB00015FAB /* AppleScriptSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleScriptSupport.m; sourceTree = "<group>"; };
+		DA0BDA0D14CCE3D000205D80 /* KeychainServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainServices.h; sourceTree = "<group>"; };
+		DA0BDA0E14CCE3D000205D80 /* KeychainServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainServices.m; sourceTree = "<group>"; };
+		DA0BDA1014CD096D00205D80 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA0BDA1114CD096D00205D80 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA16361714FB131000A38906 /* NSString+Bonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Bonjour.h"; sourceTree = "<group>"; };
+		DA16361814FB131000A38906 /* NSString+Bonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bonjour.m"; sourceTree = "<group>"; };
+		DA16361A14FB25CB00A38906 /* NSArray+Bonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Bonjour.h"; sourceTree = "<group>"; };
+		DA16361B14FB25CB00A38906 /* NSArray+Bonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Bonjour.m"; sourceTree = "<group>"; };
+		DA16361D14FB2C6300A38906 /* NSDictionary+Bonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Bonjour.h"; sourceTree = "<group>"; };
+		DA16361E14FB2C6300A38906 /* NSDictionary+Bonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Bonjour.m"; sourceTree = "<group>"; };
+		DA20C98614C52C4500DF9043 /* Tedium.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Tedium.sdef; path = Resources/Tedium.sdef; sourceTree = "<group>"; };
+		DA2CD9EB14D46448001632F3 /* BWQuincyMain.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = BWQuincyMain.nib; sourceTree = "<group>"; };
+		DA2CD9EC14D46448001632F3 /* BWQuincyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWQuincyManager.h; sourceTree = "<group>"; };
+		DA2CD9ED14D46448001632F3 /* BWQuincyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWQuincyManager.m; sourceTree = "<group>"; };
+		DA2CD9F414D46FCD001632F3 /* QuincyKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QuincyKit-Info.plist"; sourceTree = "<group>"; };
+		DA2CD9F514D46FCD001632F3 /* QuincyKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QuincyKit-Prefix.pch"; sourceTree = "<group>"; };
+		DA2CDA0314D47316001632F3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		DA2CDA0614D479D9001632F3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
+		DA2CDA0814D4BEF4001632F3 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear.png; path = Resources/gear.png; sourceTree = "<group>"; };
+		DA81451014C9C49100776C35 /* PopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopButton.h; sourceTree = "<group>"; };
+		DA81451114C9C49100776C35 /* PopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopButton.m; sourceTree = "<group>"; };
+		DA81451814C9E8D700776C35 /* AppDelegate+HelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+HelperTool.h"; sourceTree = "<group>"; };
+		DA81451914C9E8D800776C35 /* AppDelegate+HelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+HelperTool.m"; sourceTree = "<group>"; };
+		DAA4E60D14E4B9D1007D3D8F /* NetworkBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBrowser.h; sourceTree = "<group>"; };
+		DAA4E60E14E4B9D1007D3D8F /* NetworkBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkBrowser.m; sourceTree = "<group>"; };
+		DAAFA20F1524AC38000442A3 /* BWQuincyMain.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = BWQuincyMain.nib; sourceTree = "<group>"; };
+		DAAFA2101524AC38000442A3 /* BWQuincyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWQuincyManager.h; sourceTree = "<group>"; };
+		DAAFA2111524AC38000442A3 /* BWQuincyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWQuincyManager.m; sourceTree = "<group>"; };
+		DABD281514C8D0E000455E23 /* minus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minus-8.png"; path = "Resources/minus-8.png"; sourceTree = "<group>"; };
+		DABD281614C8D0E000455E23 /* plus-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-arrow.png"; path = "Resources/plus-arrow.png"; sourceTree = "<group>"; };
+		DABD281A14C92B8B00455E23 /* awesomeclock.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = awesomeclock.icns; path = Resources/awesomeclock.icns; sourceTree = "<group>"; };
+		DADA99B014C4F6C10041A7F3 /* BetterAuthorizationSampleLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BetterAuthorizationSampleLib.c; sourceTree = "<group>"; };
+		DADA99B114C4F6C10041A7F3 /* BetterAuthorizationSampleLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterAuthorizationSampleLib.h; sourceTree = "<group>"; };
+		DADA99B214C4F6C10041A7F3 /* BetterAuthorizationSampleLibInstallTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BetterAuthorizationSampleLibInstallTool.c; sourceTree = "<group>"; };
+		DADA99B314C4F6C10041A7F3 /* TediumHelperTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TediumHelperTool.c; sourceTree = "<group>"; };
+		DADA99B414C4F6C10041A7F3 /* TediumHelperToolCommon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TediumHelperToolCommon.c; sourceTree = "<group>"; };
+		DADA99B514C4F6C10041A7F3 /* TediumHelpertoolCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TediumHelpertoolCommon.h; sourceTree = "<group>"; };
+		DADA99BE14C4F76E0041A7F3 /* TediumHelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TediumHelperTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADA99C014C4F76E0041A7F3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DADA99CD14C4F7AA0041A7F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DADA99CF14C4F7C20041A7F3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		DADA99D514C4F7E90041A7F3 /* TediumHelperInstallTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TediumHelperInstallTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEBC09C14C4C2280018FA96 /* Tedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEBC0A014C4C2280018FA96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DAEBC0A314C4C2280018FA96 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DAEBC0A414C4C2280018FA96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DAEBC0A514C4C2280018FA96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAEBC0A814C4C2280018FA96 /* Tedium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tedium-Info.plist"; sourceTree = "<group>"; };
+		DAEBC0AA14C4C2280018FA96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAEBC0AC14C4C2280018FA96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAEBC0AE14C4C2280018FA96 /* Tedium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tedium-Prefix.pch"; sourceTree = "<group>"; };
+		DAEBC0B014C4C2280018FA96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DAEBC0B614C4C2280018FA96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADA99BB14C4F76E0041A7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADA99D014C4F7C20041A7F3 /* CoreServices.framework in Frameworks */,
+				DADA99CE14C4F7AA0041A7F3 /* Security.framework in Frameworks */,
+				DADA99C114C4F76E0041A7F3 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADA99D214C4F7E90041A7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADA99D714C4F7E90041A7F3 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEBC09914C4C2280018FA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEBC0A114C4C2280018FA96 /* Cocoa.framework in Frameworks */,
+				7395E18714C7C31F00AC1796 /* Growl.framework in Frameworks */,
+				DA81451414C9DB5B00776C35 /* Security.framework in Frameworks */,
+				DA81451514C9DB5E00776C35 /* CoreFoundation.framework in Frameworks */,
+				DA2CDA0414D47316001632F3 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA2CD9E914D4642C001632F3 /* QuincyKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CD9EA14D46448001632F3 /* Mac */,
+			);
+			name = QuincyKit;
+			sourceTree = "<group>";
+		};
+		DA2CD9EA14D46448001632F3 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CD9EB14D46448001632F3 /* BWQuincyMain.nib */,
+				DA2CD9EC14D46448001632F3 /* BWQuincyManager.h */,
+				DA2CD9ED14D46448001632F3 /* BWQuincyManager.m */,
+			);
+			name = Mac;
+			path = ../../ControlPlane/Source/QuincyKit/client/Mac;
+			sourceTree = "<group>";
+		};
+		DADA39F01524AD9D0093EDCC /* External Source */ = {
+			isa = PBXGroup;
+			children = (
+				DADA39F11524ADB00093EDCC /* Quincy */,
+			);
+			name = "External Source";
+			sourceTree = "<group>";
+		};
+		DADA39F11524ADB00093EDCC /* Quincy */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFA20F1524AC38000442A3 /* BWQuincyMain.nib */,
+				DAAFA2101524AC38000442A3 /* BWQuincyManager.h */,
+				DAAFA2111524AC38000442A3 /* BWQuincyManager.m */,
+			);
+			name = Quincy;
+			sourceTree = "<group>";
+		};
+		DADA99AE14C4F6C10041A7F3 /* TediumHelperTool */ = {
+			isa = PBXGroup;
+			children = (
+				DADA99AF14C4F6C10041A7F3 /* AuthorizationLib */,
+				DADA99B214C4F6C10041A7F3 /* BetterAuthorizationSampleLibInstallTool.c */,
+				DADA99B314C4F6C10041A7F3 /* TediumHelperTool.c */,
+				DADA99B514C4F6C10041A7F3 /* TediumHelpertoolCommon.h */,
+				DADA99B414C4F6C10041A7F3 /* TediumHelperToolCommon.c */,
+			);
+			name = TediumHelperTool;
+			path = HelperTool;
+			sourceTree = "<group>";
+		};
+		DADA99AF14C4F6C10041A7F3 /* AuthorizationLib */ = {
+			isa = PBXGroup;
+			children = (
+				DADA99B014C4F6C10041A7F3 /* BetterAuthorizationSampleLib.c */,
+				DADA99B114C4F6C10041A7F3 /* BetterAuthorizationSampleLib.h */,
+			);
+			path = AuthorizationLib;
+			sourceTree = "<group>";
+		};
+		DADA99ED14C51BD90041A7F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CDA0814D4BEF4001632F3 /* gear.png */,
+				DA2CDA0614D479D9001632F3 /* dsa_pub.pem */,
+				DABD281A14C92B8B00455E23 /* awesomeclock.icns */,
+				DABD281514C8D0E000455E23 /* minus-8.png */,
+				DABD281614C8D0E000455E23 /* plus-arrow.png */,
+				DA20C98614C52C4500DF9043 /* Tedium.sdef */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DAEBC09114C4C2270018FA96 = {
+			isa = PBXGroup;
+			children = (
+				DADA39F01524AD9D0093EDCC /* External Source */,
+				DADA99ED14C51BD90041A7F3 /* Resources */,
+				DADA99AE14C4F6C10041A7F3 /* TediumHelperTool */,
+				DAEBC0A614C4C2280018FA96 /* Tedium */,
+				DAEBC09F14C4C2280018FA96 /* Frameworks */,
+				DAEBC09D14C4C2280018FA96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAEBC09D14C4C2280018FA96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAEBC09C14C4C2280018FA96 /* Tedium.app */,
+				DADA99BE14C4F76E0041A7F3 /* TediumHelperTool */,
+				DADA99D514C4F7E90041A7F3 /* TediumHelperInstallTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAEBC09F14C4C2280018FA96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7395E18614C7C31F00AC1796 /* Growl.framework */,
+				DADA99CD14C4F7AA0041A7F3 /* Security.framework */,
+				DADA99CF14C4F7C20041A7F3 /* CoreServices.framework */,
+				DAEBC0A014C4C2280018FA96 /* Cocoa.framework */,
+				DADA99C014C4F76E0041A7F3 /* CoreFoundation.framework */,
+				DAEBC0A214C4C2280018FA96 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAEBC0A214C4C2280018FA96 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CDA0314D47316001632F3 /* Sparkle.framework */,
+				DAEBC0A314C4C2280018FA96 /* AppKit.framework */,
+				DAEBC0A414C4C2280018FA96 /* CoreData.framework */,
+				DAEBC0A514C4C2280018FA96 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DAEBC0A614C4C2280018FA96 /* Tedium */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CD9E914D4642C001632F3 /* QuincyKit */,
+				DA0BDA1014CD096D00205D80 /* AppDelegate.h */,
+				DA0BDA1114CD096D00205D80 /* AppDelegate.m */,
+				DA81451814C9E8D700776C35 /* AppDelegate+HelperTool.h */,
+				DA81451914C9E8D800776C35 /* AppDelegate+HelperTool.m */,
+				73C1A38B14D3ACBB00015FAB /* AppleScriptSupport.h */,
+				73C1A38C14D3ACBB00015FAB /* AppleScriptSupport.m */,
+				73C1A38414D3A50400015FAB /* Destination.h */,
+				73C1A38514D3A50400015FAB /* Destination.m */,
+				DA0BDA0D14CCE3D000205D80 /* KeychainServices.h */,
+				DA0BDA0E14CCE3D000205D80 /* KeychainServices.m */,
+				DA16361A14FB25CB00A38906 /* NSArray+Bonjour.h */,
+				DA16361B14FB25CB00A38906 /* NSArray+Bonjour.m */,
+				DA16361D14FB2C6300A38906 /* NSDictionary+Bonjour.h */,
+				DA16361E14FB2C6300A38906 /* NSDictionary+Bonjour.m */,
+				DA16361714FB131000A38906 /* NSString+Bonjour.h */,
+				DA16361814FB131000A38906 /* NSString+Bonjour.m */,
+				DAA4E60D14E4B9D1007D3D8F /* NetworkBrowser.h */,
+				DAA4E60E14E4B9D1007D3D8F /* NetworkBrowser.m */,
+				DA81451014C9C49100776C35 /* PopButton.h */,
+				DA81451114C9C49100776C35 /* PopButton.m */,
+				DAEBC0B514C4C2280018FA96 /* MainMenu.xib */,
+				DAEBC0A714C4C2280018FA96 /* Supporting Files */,
+			);
+			path = Tedium;
+			sourceTree = "<group>";
+		};
+		DAEBC0A714C4C2280018FA96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA2CD9F414D46FCD001632F3 /* QuincyKit-Info.plist */,
+				DA2CD9F514D46FCD001632F3 /* QuincyKit-Prefix.pch */,
+				DAEBC0A814C4C2280018FA96 /* Tedium-Info.plist */,
+				DAEBC0A914C4C2280018FA96 /* InfoPlist.strings */,
+				DAEBC0AC14C4C2280018FA96 /* main.m */,
+				DAEBC0AE14C4C2280018FA96 /* Tedium-Prefix.pch */,
+				DAEBC0AF14C4C2280018FA96 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADA99BD14C4F76E0041A7F3 /* TediumHelperTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADA99C714C4F76E0041A7F3 /* Build configuration list for PBXNativeTarget "TediumHelperTool" */;
+			buildPhases = (
+				DADA99BA14C4F76E0041A7F3 /* Sources */,
+				DADA99BB14C4F76E0041A7F3 /* Frameworks */,
+				DADA99BC14C4F76E0041A7F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TediumHelperTool;
+			productName = HelperTool;
+			productReference = DADA99BE14C4F76E0041A7F3 /* TediumHelperTool */;
+			productType = "com.apple.product-type.tool";
+		};
+		DADA99D414C4F7E90041A7F3 /* TediumHelperInstallTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADA99DD14C4F7EA0041A7F3 /* Build configuration list for PBXNativeTarget "TediumHelperInstallTool" */;
+			buildPhases = (
+				DADA99D114C4F7E90041A7F3 /* Sources */,
+				DADA99D214C4F7E90041A7F3 /* Frameworks */,
+				DADA99D314C4F7E90041A7F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TediumHelperInstallTool;
+			productName = HelperInstallTool;
+			productReference = DADA99D514C4F7E90041A7F3 /* TediumHelperInstallTool */;
+			productType = "com.apple.product-type.tool";
+		};
+		DAEBC09B14C4C2280018FA96 /* Tedium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAEBC0BA14C4C2280018FA96 /* Build configuration list for PBXNativeTarget "Tedium" */;
+			buildPhases = (
+				DAEBC09814C4C2280018FA96 /* Sources */,
+				DAEBC09914C4C2280018FA96 /* Frameworks */,
+				DAEBC09A14C4C2280018FA96 /* Resources */,
+				7395E18F14C7C4DA00AC1796 /* Copy Frameworks */,
+				DA81451B14CA036A00776C35 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADA99E414C4FAD60041A7F3 /* PBXTargetDependency */,
+				DADA99E214C4FAD20041A7F3 /* PBXTargetDependency */,
+			);
+			name = Tedium;
+			productName = Tedium;
+			productReference = DAEBC09C14C4C2280018FA96 /* Tedium.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAEBC09314C4C2270018FA96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DAEBC09614C4C2270018FA96 /* Build configuration list for PBXProject "Tedium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAEBC09114C4C2270018FA96;
+			productRefGroup = DAEBC09D14C4C2280018FA96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAEBC09B14C4C2280018FA96 /* Tedium */,
+				DADA99BD14C4F76E0041A7F3 /* TediumHelperTool */,
+				DADA99D414C4F7E90041A7F3 /* TediumHelperInstallTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAEBC09A14C4C2280018FA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEBC0AB14C4C2280018FA96 /* InfoPlist.strings in Resources */,
+				DAEBC0B114C4C2280018FA96 /* Credits.rtf in Resources */,
+				DAEBC0B714C4C2280018FA96 /* MainMenu.xib in Resources */,
+				DA20C98714C52C4500DF9043 /* Tedium.sdef in Resources */,
+				DABD281714C8D0E000455E23 /* minus-8.png in Resources */,
+				DABD281814C8D0E000455E23 /* plus-arrow.png in Resources */,
+				DABD281B14C92B8B00455E23 /* awesomeclock.icns in Resources */,
+				DA2CD9F614D46FCD001632F3 /* QuincyKit-Info.plist in Resources */,
+				DA2CDA0714D479D9001632F3 /* dsa_pub.pem in Resources */,
+				DA2CDA0914D4BEF4001632F3 /* gear.png in Resources */,
+				DAAFA2121524AC38000442A3 /* BWQuincyMain.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADA99BA14C4F76E0041A7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADA99CA14C4F79B0041A7F3 /* BetterAuthorizationSampleLib.c in Sources */,
+				DADA99CB14C4F79B0041A7F3 /* TediumHelperTool.c in Sources */,
+				DADA99CC14C4F79B0041A7F3 /* TediumHelperToolCommon.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADA99D114C4F7E90041A7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADA99E014C4F7F70041A7F3 /* BetterAuthorizationSampleLibInstallTool.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEBC09814C4C2280018FA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA81451314C9DAA000776C35 /* BetterAuthorizationSampleLib.c in Sources */,
+				DAEBC0AD14C4C2280018FA96 /* main.m in Sources */,
+				DADA99B914C4F6C10041A7F3 /* TediumHelperToolCommon.c in Sources */,
+				DA81451214C9C49100776C35 /* PopButton.m in Sources */,
+				DA81451A14C9E8D800776C35 /* AppDelegate+HelperTool.m in Sources */,
+				DA0BDA0F14CCE3D000205D80 /* KeychainServices.m in Sources */,
+				DA0BDA1214CD096D00205D80 /* AppDelegate.m in Sources */,
+				73C1A38614D3A50400015FAB /* Destination.m in Sources */,
+				73C1A38D14D3ACBB00015FAB /* AppleScriptSupport.m in Sources */,
+				DAA4E60F14E4B9D1007D3D8F /* NetworkBrowser.m in Sources */,
+				DA16361914FB131000A38906 /* NSString+Bonjour.m in Sources */,
+				DA16361C14FB25CB00A38906 /* NSArray+Bonjour.m in Sources */,
+				DA16361F14FB2C6300A38906 /* NSDictionary+Bonjour.m in Sources */,
+				DAAFA2131524AC38000442A3 /* BWQuincyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DADA99E214C4FAD20041A7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADA99BD14C4F76E0041A7F3 /* TediumHelperTool */;
+			targetProxy = DADA99E114C4FAD20041A7F3 /* PBXContainerItemProxy */;
+		};
+		DADA99E414C4FAD60041A7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADA99D414C4F7E90041A7F3 /* TediumHelperInstallTool */;
+			targetProxy = DADA99E314C4FAD60041A7F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAEBC0A914C4C2280018FA96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAEBC0AA14C4C2280018FA96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAEBC0AF14C4C2280018FA96 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAEBC0B014C4C2280018FA96 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DAEBC0B514C4C2280018FA96 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAEBC0B614C4C2280018FA96 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADA99C814C4F76E0041A7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DADA99C914C4F76E0041A7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DADA99DE14C4F7EA0041A7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DADA99DF14C4F7EA0041A7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAEBC0B814C4C2280018FA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAEBC0B914C4C2280018FA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAEBC0BB14C4C2280018FA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../ControlPlane/Source/QuincyKit/client/iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tedium/Tedium-Prefix.pch";
+				INFOPLIST_FILE = "Tedium/Tedium-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAEBC0BC14C4C2280018FA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../ControlPlane/Source/QuincyKit/client/iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tedium/Tedium-Prefix.pch";
+				INFOPLIST_FILE = "Tedium/Tedium-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADA99C714C4F76E0041A7F3 /* Build configuration list for PBXNativeTarget "TediumHelperTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADA99C814C4F76E0041A7F3 /* Debug */,
+				DADA99C914C4F76E0041A7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADA99DD14C4F7EA0041A7F3 /* Build configuration list for PBXNativeTarget "TediumHelperInstallTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADA99DE14C4F7EA0041A7F3 /* Debug */,
+				DADA99DF14C4F7EA0041A7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAEBC09614C4C2270018FA96 /* Build configuration list for PBXProject "Tedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEBC0B814C4C2280018FA96 /* Debug */,
+				DAEBC0B914C4C2280018FA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAEBC0BA14C4C2280018FA96 /* Build configuration list for PBXNativeTarget "Tedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEBC0BB14C4C2280018FA96 /* Debug */,
+				DAEBC0BC14C4C2280018FA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAEBC09314C4C2270018FA96 /* Project object */;
+}

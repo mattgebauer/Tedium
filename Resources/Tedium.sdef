@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+	<xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+	
+	<suite name="Tedium Suite" code="TSte" description="AppleScript support for Tedium">
+		<class name="application" code="TAPP" description="Tediums's application class" inherits="application">
+            <cocoa class="NSApplication"/>
+
+            <property name="current destination" type="text" code="SDET" description="Set the current destination" access="w">
+                <cocoa key="currentDestination"/>
+            </property>
+            <element type="destination"/>
+            
+            
+        </class>
+        <class name="destination" code="DEST" description="A destination">
+            <cocoa class="Destination"/>
+            <property name="destinationVolumeName" code="DVNM" type="text" access="rw" description="destinations"/>
+		</class>
+    
+	</suite>
+</dictionary>
